@@ -1,5 +1,9 @@
 # rusthw1
 
+Portland State University
+CS410/510
+Professor Bart Massey
+
 ## Background
 
 A commonly desired operation in various algorithms is to calculate an exponential modulo some (usually prime) number
