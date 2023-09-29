@@ -1,5 +1,6 @@
 # rusthw1
 
+Pedro Gonzalez  
 Portland State University  
 CS410/510  
 Professor Bart Massey
