@@ -62,6 +62,6 @@ I thought of some different edge cases, if x or y is 0.
 
 I thought of cases that should fail. This lead me to research how to expect something to fail in rust which I was delighted to know it is handled nicely.
 
-The other cases I thought of were numbers that were too large, and if m was 0.
+The cases I thought of were numbers that were too large, and if m was 0.
 
 I tried to make a test that passes a negative value into the function, but because Rust is a strongly typed language it the compiler said "oh no you cannot do that". Passing a negative argument via the command line closes the program with an appropriate error message.
