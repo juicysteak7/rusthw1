@@ -64,4 +64,4 @@ I thought of cases that should fail. This lead me to research how to expect some
 
 The cases I thought of were numbers that were too large, and if m was 0.
 
-I tried to make a test that passes a negative value into the function, but because Rust is a strongly typed language it the compiler said "oh no you cannot do that". Passing a negative argument via the command line closes the program with an appropriate error message.
+I tried to make a test passing a negative value into the function, but Rust is a strongly typed language and the compile doesn't allow that. Passing a negative argument via the command line closes the program with an appropriate error message.
