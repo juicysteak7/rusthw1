@@ -50,7 +50,7 @@ The book also covers how to handle command line arguments, print statements, vec
 
 I used ChatGPT for suggestions on how to handle overflows which lead me to the checked arithmetic functions.
 
-Using all this knowledge the implementation of this algorithm was fairly straitforward.
+Using all this knowledge the implementation of this algorithm was fairly strait forward.
 
 ## Testing
 
