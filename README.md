@@ -46,7 +46,7 @@ The professor suggested looking at our textbook, Rust Programming, for an implem
 
 The implementation showed how to declare functions with arguments and return values, assert something ( this is mainly used for testing but can be used otherwise ), while loops, and if statements.
 
-The book also covers how to handle command line arguments, print statements, vectors ( fancy arrays ), mutable variables, and exitig a program.
+The book also covers how to handle command line arguments, print statements, vectors ( fancy arrays ), mutable variables, and exiting a program.
 
 I used ChatGPT for suggestions on how to handle overflows which lead me to the checked arithmetic functions.
 
