@@ -14,11 +14,19 @@ fn main() {
         error();
     }
 
-    // Load arguments into new vector
+    // Load arguments into new vector while checking for parse errors
     let mut numbers = Vec::new();
     println!("Processing arguments...");
     for arg in env::args().skip(1){
-        numbers.push(u64::from_str(&arg).expect("modexp: usage: modexp <x:u64> <y:u64> <m:u64>"));
+        match u64::from_str(&arg) {
+            Ok(number) => {
+                numbers.push(number);
+            }
+            Err(_) => {
+                eprintln!("Error parsing argument, the argument must be a u64.");
+                error();
+            }
+        }
     }
 
     // Pass arguments to modexp function
@@ -80,7 +88,7 @@ fn modexp(x:u64,y:u64,m:u64) -> u64 {
 
 // Print a usage error message and exit.
 fn error() -> ! {
-    eprintln!("modexp: usage: modexp <x:u64> <y:u64> <m:u64>");
+    eprintln!("modexp: usage: cargo run <x:u64> <y:u64> <m:u64>");
     std::process::exit(1);
 }
 
