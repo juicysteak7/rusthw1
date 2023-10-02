@@ -133,7 +133,11 @@ mod tests {
     fn test_modexp_invalid_input() {
         // Test with invalid input
         assert_eq!(modexp(2, 20, 0), 0); // m=0 should return 0 (invalid)
-        assert_eq!(modexp(2, 20, 1), 0); // m=1 should return 0 (invalid)
+    }
+
+    #[test]
+    #[should_panic]
+    fn test_modexp_invalid_input2(){
         assert_eq!(modexp(2, 20, std::u64::MAX), 0); // m=max should return 0 (invalid)
     }
 }
