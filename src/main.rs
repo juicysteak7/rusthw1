@@ -6,6 +6,7 @@
 use std::env;
 use std::str::FromStr;
 
+/// main function of command line modexp function
 fn main() {
     // Read arguments from environment
     println!("Starting program...");
@@ -34,6 +35,8 @@ fn main() {
     println!("Result: {}",modexp(numbers[0],numbers[1],numbers[2]));
 }
 
+
+/// modexp implementation
 fn modexp(x:u64,y:u64,m:u64) -> u64 {
     assert!(m != 0);
     let mut z:u128 = 1;
